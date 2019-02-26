@@ -1,0 +1,17 @@
+﻿Design Document Template
+Februari 25th 2019
+
+
+OBJECTIVE
+A feature that will give you a message after you’ve add a playlist to your spotify account.  
+BACKGROUND 
+I think it is really important to use this feature, because it would be really user friendly. If you add a playlist to your spotify account, so people don’t really know if the action succeed, so they probably press a few times on the button to add a playlist. This will result in a lot of playlists on the spotify account. 
+TECHNICAL DESIGN
+A new component, OnSaveMessage, should be created. This component, on render, will show a message on the website, so people are getting notified when they add a playlist to their spotify account. 
+In the component class, OnSaveMessage needs to return the following text:  “{playlist-name} has been succesfully added to your spotify account.” 
+The OnSaveMessage should get the name of the playlist trough the this.state.Playlistname. 
+Then we need to render it in PlayList.js with the following code <OnSaveMessage onClick = {this.props.onSave}  />
+
+
+CAVEATS
+We will choose to do it the way like those, because it is an easy way to do it and we can easily add it to the code, so we don’t have to change the existing code. This can be a drawback with other solutions. If you change the existing code, it will leave bugs or other errors.
